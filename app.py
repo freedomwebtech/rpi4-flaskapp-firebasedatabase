@@ -6,9 +6,9 @@ import datetime
 app = Flask(__name__)
 
 # Initialize Firebase
-cred = credentials.Certificate("/home/pi/flask/rpi4-363a0-firebase-adminsdk-655re-2c13979ea2.json")
+cred = credentials.Certificate("")
 firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://rpi4-363a0-default-rtdb.firebaseio.com'
+    'databaseURL': ''
 })
 
 @app.route('/', methods=['GET', 'POST'])
